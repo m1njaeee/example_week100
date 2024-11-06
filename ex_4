@@ -1,0 +1,14 @@
+#include<stdio.h>
+union example {
+	char c;
+	int i;
+};
+
+int main()
+{
+	union example v;
+	v.c = 'A';
+	printf("v.c:%c v.i:%i\n", v.c, v.i);
+	v.i = 10000;
+	printf("v.c:%c v.i:%i", v.c, v.i);
+}
